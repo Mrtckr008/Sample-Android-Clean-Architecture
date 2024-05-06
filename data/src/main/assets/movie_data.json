@@ -1,0 +1,43 @@
+{
+  "headerMovie": {
+    "id": "1",
+    "imageUrl": "https://example.com/image1.jpg",
+    "title": "Movie Title 1",
+    "titleUrl": "https://example.com/title1",
+    "name": "Movie Name 1",
+    "genre": [
+      "Action",
+      "Adventure"
+    ],
+    "addedToList": true,
+    "progress": 0.5
+  },
+  "popularMovieList": [
+    {
+      "id": "2",
+      "imageUrl": "https://example.com/image2.jpg",
+      "title": "Movie Title 2",
+      "titleUrl": "https://example.com/title2",
+      "name": "Movie Name 2",
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "addedToList": false,
+      "progress": 0.2
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://example.com/image3.jpg",
+      "title": "Movie Title 3",
+      "titleUrl": "https://example.com/title3",
+      "name": "Movie Name 3",
+      "genre": [
+        "Thriller",
+        "Crime"
+      ],
+      "addedToList": true,
+      "progress": 0.8
+    }
+  ]
+}

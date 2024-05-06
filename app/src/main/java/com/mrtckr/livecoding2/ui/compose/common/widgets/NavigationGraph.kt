@@ -6,6 +6,7 @@ import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.mrtckr.livecoding2.ui.compose.movie.MovieRoute
 import com.mrtckr.livecoding2.ui.compose.musicplayer.service.MusicPlayerService
 import com.mrtckr.livecoding2.ui.compose.musicplayer.widgets.MusicPlayerRoute
 import com.mrtckr.livecoding2.ui.compose.musicplayer.widgets.listdetail.MusicListDetailRoute
@@ -29,7 +30,7 @@ fun NavigationGraph(
                 navController.navigate("playlistDetail/${selectedPlaylistId}")
             })
         }
-        composable(Routes.NOTIFICATIONS) { NotificationsScreen() }
+        composable(Routes.MOVIE) { MovieRoute() }
         composable(Routes.PLAYLIST_DETAIL) { backStackEntry ->
             val songListId = backStackEntry.getArgument("songListId")
             MusicListDetailRoute(
@@ -45,6 +46,6 @@ fun NavigationGraph(
 object Routes {
     const val HOME = "home"
     const val MUSIC_PLAYER = "musicPlayer"
-    const val NOTIFICATIONS = "notifications"
+    const val MOVIE = "movie"
     const val PLAYLIST_DETAIL = "playlistDetail/{songListId}"
 }

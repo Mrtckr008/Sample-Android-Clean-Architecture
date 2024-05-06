@@ -9,3 +9,5 @@ interface WeatherRepository {
 
     fun getWeatherLocalDataByName(name: String): Flow<WeatherData>
 }
+
+

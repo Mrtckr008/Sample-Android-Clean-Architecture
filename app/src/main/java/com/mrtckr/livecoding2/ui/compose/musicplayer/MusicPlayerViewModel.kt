@@ -34,7 +34,6 @@ class MusicPlayerViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5_000),
         )
 
-
     fun updateSongList(playlistListEntity: PlaylistListEntity) {
         viewModelScope.launch {
             playlistListService.updateSongListData(playlistListEntity)
